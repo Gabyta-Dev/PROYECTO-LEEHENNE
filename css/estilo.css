@@ -3,25 +3,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /*FUENTE*/
 @font-face {
   font-family: "Raleway", sans-serif;
   src: url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 }
+
 body {
   background-color: rgb(255, 255, 255);
 }
+
 /*ESTILO DE  INDEX*/
 /*ESTILO NAV*/
 .navbar {
   box-shadow: rgba(107, 107, 107, 0.45) 0px 10px 5px -10px;
 }
+
 li a {
   font-family: "Raleway", sans-serif !important;
 }
+
 .navbar-brand {
   font-family: "Raleway", sans-serif !important;
 }
+
 .fondo-principal {
   width: 100%;
   height: 100vh;
@@ -29,12 +35,14 @@ li a {
   background-size: cover;
   background-position: center;
 }
-.epigrafe p{
-    position: absolute;
-    top: 90%;
-    padding-left: 0.625rem;
-    color:rgb(255, 255, 255);
+
+.epigrafe p {
+  position: absolute;
+  top: 90%;
+  padding-left: 0.625rem;
+  color: rgb(255, 255, 255);
 }
+
 /* CONTENEDOR DE CARD EFECTO OVERLAY*/
 .container {
   width: 100%;
@@ -42,26 +50,30 @@ li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 68.75rem; 
+  max-width: 68.75rem;
   margin: auto;
 }
+
 /*CAJA CONTENEDORA DE IMG Y ENLACE*/
 .box {
-  width: 18.75rem; 
-  height: 25rem; 
+  width: 18.75rem;
+  height: 25rem;
   position: relative;
   overflow: hidden;
   margin: 1.25rem;
   box-shadow: rgba(3, 3, 3, 0.25) 0px 25px 50px -12px;
 }
+
 .box {
   width: 100%;
   height: 80%;
 }
+
 .box img {
   width: 100%;
   height: 100%;
 }
+
 /* EFECTO OVERLAY EN LA IMAGEN*/
 .capa {
   position: absolute;
@@ -78,161 +90,216 @@ li a {
   transform: scale(0);
   transition: 0.5s ease;
 }
+
 .box:hover .capa {
   transform: scale(1);
 }
-.capa a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+
+.capa a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
-/* MEDIA QUERY PARA CAJAS CONTENEDORAS*/
-@media (max-width: 700px ) {
-    .container{
-        flex-wrap: wrap;
-    }
-}
+
 /***LAYOUT DESDE MAIN CON GRID **********/
 .grid {
-    display: grid;
-    grid-template-areas: "seccion-uno seccion-uno"
-   "wrapper wrapper "
-   "seccion-dos seccion-dos ";
-    background-color: white;
-    width: 100%;
-    min-height: 100vh; }
-  
-  /******SEC **********************/
-  .seccion-uno  {
-    grid-area: seccion-uno ;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background-color: white;
-    color: black;
-    font-family: "Raleway", sans-serif;
+  display: grid;
+  grid-template-areas: "seccion-uno seccion-uno"
+    "wrapper wrapper "
+    "seccion-dos seccion-dos ";
+  background-color: white;
+  width: 100%;
+  min-height: 100vh;
 }
-.seccion-ul{
-      display: flex;
-      flex-direction: row wrap;
-      justify-content: center;
-      align-items: center;
-      list-style: none; 
-    }
-    .seccion-ul li{
-        padding: 1.25rem;
-        text-decoration: none; 
-    }
-  
-  .futuros, .static {
-    font-size: 2.5rem;
-    padding: 1.875rem;
-    text-align: center; 
+
+/******SEC **********************/
+.seccion-uno {
+  grid-area: seccion-uno;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: white;
+  color: black;
+  font-family: "Raleway", sans-serif;
 }
-  
-  .futurosText {
-    text-align: center; 
+
+.seccion-ul {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
 }
-  
-  /*****ESTILO SECCION WRAPPER*****************/
-  .wrapper {
-    grid-area: wrapper;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-family: "Raleway", sans-serif;
-    text-align: center; }
-  
-  .static {
-    color: black;
-    margin: 100px 0;
+
+.seccion-ul li {
+  padding: 1.25rem;
+  text-decoration: none;
 }
-  
-  .dynamic {
-    margin-bottom: 0 !important;
-    line-height: 40px;
-    overflow: hidden; }
-  
-  .dynamic li {
-    list-style: none;
-    color: black;
-    font-size: 2.1875rem;
-    position: relative;
-    animation: typing 5s steps(10) infinite; 
+
+.futuros,
+.static {
+  font-size: 2.5rem;
+  padding: 1.875rem;
+  text-align: center;
 }
-  
-  @keyframes typing {
-    100% {
-      top: -100; } }
-  
-  .spanText {
-    position: relative; 
-    font-family: "Raleway", sans-serif;
+
+.futurosText {
+  text-align: center;
 }
-  
-  .spanText::after {
-    content: "";
-    position: absolute;
+
+/*****ESTILO SECCION WRAPPER*****************/
+.wrapper {
+  grid-area: wrapper;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.static {
+  color: black;
+}
+
+.dynamic {
+  margin-bottom: 0 !important;
+  line-height: 40px;
+  overflow: hidden;
+}
+
+.dynamic li {
+  list-style: none;
+  color: black;
+  position: relative;
+  animation: typing 5s steps(10) infinite;
+}
+
+@keyframes typing {
+  100% {
+    top: -100;
+  }
+}
+
+.spanText {
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+}
+
+.spanText::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 120%;
+  width: 100%;
+  background-color: white;
+  border-left: 1px solid black;
+  animation: typ 5s steps(10) infinite;
+}
+
+@keyframes typ {
+
+  40%,
+  60% {
+    left: calc(90% + 10%);
+  }
+
+  100% {
     left: 0;
-    height: 90%;
-    width: 100%;
-    background-color: white;
-    border-left: 1px solid black;
-    animation: typ 5s steps(10) infinite; }
-  
-  @keyframes typ {
-    40%, 60% {
-      left: calc(90% + 10%); }
-    100% {
-      left: 0; } }
-  
-  /*****ESTILO DE SECCION DOS*******************/
-  .seccion-dos {
-    grid-area: seccion-dos;
-    height: 100vh;
-    background-image: url("../imagenes/iconos-fondos-perfil/adrianna-geo-NrzpktVdWUY-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; 
+  }
 }
-    .seccion-dos , .subtitulo1 {
-        font-family: "Raleway", sans-serif;
-      letter-spacing: 0.3125rem;
-      font-size: 1.5625rem;
-      color: white; 
-    }
-    /*MEDIA QUERY PARA SECCION UNO -DOS Y WRAPPER*/
-    @media (max-width: 768px) {
-        .Grid {
-          grid-template-areas: "seccion-uno"
-       "seccion-dos"
-       "wrapper"; 
-    }
-        .futuros, .static {
-          font-size: 1.25rem;
-         }
-          .futuros .futurosText, .static .futurosText {
-            padding: 0.9375rem;
-            font-size: 0.9375rem; 
-        }
-        .subtitulo1 {
-          text-align: center;
-          font-size: 1.875rem;
-         }
-        .wrapper {
-          flex-direction: column; 
-        }
-        .dynamic {
-          margin: 0; 
-        }
-        .spanTex {
-          animation: typ 5s steps(5) infinite;
-         }
-        .gridBody {
-          grid-template-columns: repeat(1, 1fr);
-         }
-        }
+
+/**SECTION TRES*******************************/
+.gridWedding {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 21.875rem;
+}
+
+/**** CONTENEDOR DE IMAGENES**********************************/
+.galeryImg2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*****CONTENEDOR DE ITEMS FOTOS********************************/
+
+.galeryItems2:nth-child(4) {
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+}
+
+.galeryItems2:nth-child(8) {
+  grid-row-start: span 2;
+}
+
+.galeryItems2:nth-child(12) {
+  grid-column-start: span 2;
+  grid-row-start: span 3;
+}
+
+.galeryItems2:nth-child(17) {
+  grid-row-start: span 2;
+}
+
+.galeryItems2:nth-child(19) {
+  grid-row-start: span 2;
+}
+
+/***FOOTER************************************/
+footer {
+  background-color: #3b464e;
+}
+
+/*MEDIA QUERY PARA SECCION UNO -DOS Y WRAPPER*/
+@media (max-width: 768px) {
+/* MEDIA QUERY PARA CAJAS CONTENEDORAS*/
+@media (max-width: 700px) {
+  .container {
+    flex-wrap: wrap;
+  }
+}
+  .Grid {
+    grid-template-areas: "seccion-uno"
+      "seccion-dos"
+      "wrapper";
+  }
+
+  .futuros,
+  .static {
+    font-size: 1.25rem;
+  }
+
+  .futuros .futurosText,
+  .static .futurosText {
+    padding: 0.9375rem;
+    font-size: 0.9375rem;
+  }
+
+  .subtitulo1 {
+    text-align: center;
+    font-size: 1.875rem;
+  }
+
+  .wrapper {
+    flex-direction: column;
+
+  }
+
+  .dynamic {
+    margin: 0;
+  }
+
+  .spanTex {
+    animation: typ 5s steps(5) infinite;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gridWedding {
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
