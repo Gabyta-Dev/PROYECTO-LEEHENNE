@@ -45,6 +45,7 @@
 <h3 align="left">Estructura Resposive</h3>
 
 ![uno](https://user-images.githubusercontent.com/95593201/233146972-91131ef8-67c6-4af7-9d51-7454b8a90f39.jpeg)
+![responsivily](https://github.com/Gabyta-Dev/PROYECTO-LEEHENNE/assets/95593201/52288e7b-0095-4e54-868b-cbb6996913cb)
 
 <h3>3.	La web será visible a partir de la URL </h3>
 <h4 align="center">
