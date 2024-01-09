@@ -31,7 +31,7 @@ li a {
 .fondo-principal {
   width: 100%;
   height: 100vh;
-  background-image: url(../imagenes/iconos-fondos-perfil/PORTADA.jpg);
+  background-image: url(../imagenes/iconos-fondos-perfil/victoria-priessnitz.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -99,7 +99,13 @@ li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-
+/*** SIMBOLO MAS ********************/
+.fa-light {
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
 /***LAYOUT DESDE MAIN CON GRID **********/
 .grid {
   display: grid;
@@ -111,7 +117,7 @@ li a {
   min-height: 100vh;
 }
 
-/******SEC **********************/
+/******SECCION UNO  **********************/
 .seccion-uno {
   grid-area: seccion-uno;
   display: grid;
@@ -145,6 +151,8 @@ li a {
 
 .futurosText {
   text-align: center;
+  font-size: 1rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /*****ESTILO SECCION WRAPPER*****************/
@@ -249,8 +257,71 @@ li a {
 
 /***FOOTER************************************/
 footer {
-  background-color: #3b464e;
+  background-color: #ffffff;
+  font-family: "Raleway", sans-serif;
+
 }
+/*****ESTILO DE FOOTER************************/
+
+.contentFooter {
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.liFooterIndex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+  .liFooterIndex .liFooter {
+    text-decoration: none;
+    list-style: none;
+    outline: 0; 
+  }
+
+.liFooter a {
+  text-decoration: none;
+  font-size: 0.9375rem !important; 
+  color: black;
+  padding: 10px;
+  
+}
+/**REDES SOCIALES**********/
+.redes {
+  display: flex;
+  padding: 10px;
+ }
+
+.icon {
+  height: 5rem;
+  overflow: hidden !important; 
+}
+
+.icon a {
+  display: block;
+  height: 5rem;
+  line-height: 4.5rem;
+  transition: 0.4s all; 
+}
+
+.icon:hover a {
+  height: 2.8125rem; 
+}
+.fa-brands{
+  color: black;
+}
+strong{
+  font-family: 'Times New Roman', Times, serif;
+}
+/*FLECHA IR HACIA ARRIBA*/
+.flechaIr {
+  margin-left: 10px; 
+}
+
 
 /*MEDIA QUERY PARA SECCION UNO -DOS Y WRAPPER*/
 @media (max-width: 768px) {
@@ -300,6 +371,322 @@ footer {
   }
 
   .gridWedding {
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat( object-fit 3 , 1fr);
+
   }
 }
+/****HTML SOBRE MI ***************/
+/*******ESTILOS DE SECCION SOBRE MI*************/
+.containerSobreMi{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sect{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: black;
+  font-size: 1.125rem;
+  word-spacing: 0.625rem;
+  font-family: "Raleway", sans-serif;
+  padding: 50px;
+  margin: 50px;
+}
+.sect h2{
+  width: 50%;
+  text-align: center;
+}
+.sect p{
+  width: 50%;
+}
+
+/**FOTO DE PERFIL ***************/
+.fotografia{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.foto{
+  width: 30%;
+  margin: 50px;
+}
+.parrafoText{
+  display: flex;
+  flex-wrap: wrap; 
+}
+.parrafoText p{
+  word-spacing: 0.625rem;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  padding: 50px;
+}
+
+/*****INFO Y CONTENIDO PARA RE DIRIGIRTE A SECCION DE CONTACTO********************/
+.sectionContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.125rem;
+}
+.sectionContact h4{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/************BOTON DE FORMULARIO*******************/
+.button {
+  border: 1px solid  #000000  ;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 2px;
+  color: #000000;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  transition: 2s;
+ }
+ .button:hover{
+  background-color:#313131;
+  color: #ffffff;
+  
+ }
+/***FLECHA IR HACIA ARRIBA**************/
+.flecha{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+}
+.fa-solid{
+  font-size: 20px;
+  color: #000000
+}
+@media (max-width: 768px) {
+  .sect{
+    flex-direction: column;
+    padding: 10px;
+    margin: 20px;
+  }
+  .sect p {
+    width: 100%;
+  }
+  strong{
+    text-align: center;
+  }
+ .button{
+  width: 50%;
+ }
+  }
+/***** FIN DE SOBRE MI*********************/
+/****HTML PORTRAIT***********/
+ /******TITULOS**********************/
+ .tituloWedding {
+ display: grid;
+  align-items: center;
+  color: black;
+  font-size: 1.125rem;
+  word-spacing: 0.625rem;
+  font-family: "Raleway", sans-serif;
+}
+  .tituloWedding .linea {
+    border-top: 1px solid black;
+    height: 1px; 
+  }
+  /*Contenedor de imagenes */
+.gridWedding {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 21.875rem;
+  padding: 3.125rem;
+  grid-gap: 0.5rem; }
+
+/**** CONTENEDOR DE IMAGENES**********************************/
+.galeryImg2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+/*****CONTENEDOR DE ITEMS FOTOS********************************/
+.galeryItems2 {
+  position: relative; }
+
+.galeryItems2:nth-child(4) {
+  grid-column-start: span 2;
+  grid-row-start: span 2; }
+
+.galeryItems2:nth-child(8) {
+  grid-row-start: span 2; }
+
+.galeryItems2:nth-child(12) {
+  grid-column-start: span 2;
+  grid-row-start: span 3; }
+
+.galeryItems2:nth-child(17) {
+  grid-row-start: span 2; }
+
+.galeryItems2:nth-child(19) {
+  grid-row-start: span 2; }
+
+.galeryItems2:nth-child(21) {
+  grid-column-start: span 2; }
+
+.galeryItems2:nth-child(23) {
+  grid-column-start: span 2;
+  grid-row-start: span 2; }
+
+.galeryItems2:nth-child(24) {
+  grid-row-start: span 2; }
+
+.galeryItems2:nth-child(25) {
+  grid-column-start: span 2; }
+
+.galeryItems2:nth-child(26) {
+  grid-row-start: span 2; }
+
+.galeryItems2:nth-child(28) {
+  grid-row-start: span 2; }
+
+.galeryItems2:nth-child(29) {
+  grid-row-start: span 2; }
+
+/*******FIN DE GALERIA WEDDING****************************/
+@media (max-width: 768px){
+.gridWedding {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+}
+}
+/**SECCION EXPERIENCIAS ******************/
+.experiencieGrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  font-family: "Cardo", serif;
+  font-size: 1.0625rem;
+  color: black;
+  margin-bottom: 3.75rem; }
+
+.subtitulo3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background-image: url(../imagenes/iconos-fondos-perfil/cherry.jpg);
+  background-position: center;
+  background-size: cover; 
+}
+
+.opinion1 {
+  margin: 1.875rem 12.5rem; 
+  letter-spacing: 2px;
+}
+
+  /*media query*********/
+  @media (max-width: 768px){
+  .experiencieGrid {
+    padding: 0.5rem; }
+  .opinion1 {
+    margin: 1.25rem; }
+    }
+    /***SECCION CONTACTO *******************/
+.mainContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: url(../imagenes/iconos-fondos-perfil/manos.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Cardo", serif;
+  color:  rgb(255, 255, 255);
+ }
+  .mainContacto .final {
+    font-size: medium;
+    margin-top: 6.75rem; 
+    color:  rgba(32, 32, 32, 0.7); 
+  
+  }
+
+.formContact {
+  display: flex;
+  flex-direction: column wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 31.25rem;
+  margin: auto;
+  margin-top: 3.125rem;
+  background-color: rgba(32, 32, 32, 0.4);
+  padding: 1.875rem 1.25rem;
+  border-radius: 0.625rem;
+  margin-bottom: 3.125rem; 
+}
+
+label {
+  font-size: 1.125rem;
+  letter-spacing: 2px; }
+
+input {
+  color: #ebeaec;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  padding: 0.3125rem; }
+  input input[type=number]::-webkit-inner-spin-button,
+  input input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+
+.evento {
+  margin: 0.625rem 0; }
+
+textarea {
+  width: 100%;
+  height: 12.5em; }
+
+.send {
+  color: #ebeaec;
+  padding: 1.25rem;
+  border: none; }
+  .send:hover {
+    cursor: pointer;
+    background: #ede6db;
+    color: #ebeaec; }
+
+.botonReset {
+  color: #ebeaec;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ebeaec; }
+.send:hover {
+  color:#000000 
+}
+    /*media query*********/
+    @media (max-width: 768px){
+      .formContact {
+        margin: 0.625rem; }
+        .formContact .final {
+          padding: 5px;
+          text-align: center; }
+          .final{
+            padding: 10px;
+            text-align: center;
+          }
+        }
+  

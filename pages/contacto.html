@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LINK DE BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--LINK DE FONTAWESOME-->
+    <script src="https://kit.fontawesome.com/05f55949f4.js" crossorigin="anonymous"></script>
+    <!--LINK DE CSS-->
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>LEE HENNE-CONTACTO</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">LEE HENNE</a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon border-0"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Lee Henne</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/sobre-mi.html">Sobre Mi</a>
+                              </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/portrait.html">Portrait</a>
+                            </li>
+                            <li><a class="nav-link" href="../pages/testimonios.html">Experiencias</a></li>
+                            <li><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="mainContacto">
+        <h1 class="final">
+          Contame acerca de tus Planes y Deseos 
+          me encantaria conocer tu historia
+          </h1>
+<!-- FORMULARIO DE CONTACTO -->           
+          <form class="formContact" action="https://formspree.io/f/xeqnvjgr"
+          method="POST">
+             <fielset>
+              <ul>
+              <legend>FORMULARIO</legend>
+<!--DIV PARA NOMBRE Y APELLIDO------------------------->
+              <div>
+              <label for="Nombre">Nombre</label>
+                <input type="Text" required autocomplete="Nombre">
+              </div>  
+              <div>  
+              <label for="Apellido">Apellido Name</label>
+                <input type="Text" name="Apellido">
+              </div>  
+<!--DIV PARA CORREO------------------------------------->        
+              <div>
+              <label for="email">Email</label>
+                <input type="Text" name="email"required autocomplete="email">
+              </div> 
+<!--DIV PARA TELEFONO DE CONTACTO---------------------->
+              <div>
+              <label for="telefono">Telefono</label>
+                <input type="number"name="telefono" required autocomplete="telefono">
+              </div> 
+<!--DIV PARA SELECCIONAR LA OPCION DEL EVENTO----------->         
+              <div>
+              <label for="evento" class="evento">Evento</label>          
+              <select name="evento" class="evento">
+                  <option value="wedding">Selecciona</option>
+                  <option value="wedding">Wedding</option>
+                  <option value="comercial">Retrato</option>
+                  <option value="otro">Otro Evento</option>
+              </select>
+            </div>   
+            
+<!--DIV PARA INFO DE DIRECION DE EVENTO----------------->      
+            <div>
+              <label for="ubicacion">Ubicación</label>
+                <input type="text" name="Ubicación" required autocomplete="ubicacion">
+            </div> 
+<!--DIV PARA CALENDARIO----------------------------------> 
+            <div class="mes"> 
+              <label for="fecha"class="evento">Fecha</label>          
+              <select name="evento" class="evento">
+              <option value="enero">Mes</option>
+              <option value="enero">Enero</option>
+              <option value="Febrero">Febrero</option>
+              <option value="Marzo">Marzo</option>
+              <option value="Abril">Abril</option>
+              <option value="Marzo">Mayo</option>
+              <option value="Abril">Junio</option>
+              <option value="Marzo">Julio</option>
+              <option value="Abril">Agosto</option>
+              <option value="Marzo">Septiembre</option>
+              <option value="Abril">Octubre</option>
+              <option value="Marzo">Noviembre</option>
+              <option value="Abril">Diciembre</option>
+            </select>         
+<!--DIA------------------------------------------------->                       
+              <select name="evento" class="evento">
+              <option value="fecha">Dia</option>  
+              <option value="fecha">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+              <option value="">7</option>
+              <option value="">8</option>
+              <option value="">9</option>
+              <option value="">10</option>
+              <option value="">11</option>
+              <option value="">12</option>
+              <option value="">13</option>
+              <option value="">14</option>
+              <option value="">15</option>
+              <option value="">16</option>
+              <option value="">17</option>
+              <option value="">18</option>
+              <option value="">19</option>
+              <option value="">20</option>
+              <option value="">21</option>
+              <option value="">22</option>
+              <option value="">23</option>
+              <option value="">24</option>
+              <option value="">25</option>
+              <option value="">26</option>
+              <option value="">27</option>
+              <option value="">28</option>
+              <option value="">29</option>
+              <option value="">30</option>
+              <option value="">31</option>
+            </select>         
+<!--AÑO------------------------------------------------->                                  
+              <select name="evento" class="evento">
+              <option value="enero">Año</option>
+              <option value="enero">2022</option>
+              <option value="Febrero">2023</option>
+              <option value="Marzo">2024</option>
+              <option value="Marzo">2025</option>
+            </select>         
+            
+          </div> 
+<!--DIV PARA MENSAJE------------------------------------>
+              <label for="Menssage">Mensaje</label>
+                 <textarea name="message"type="text" name="Menssage"placeholder="Contame tu Historia"></textarea> 
+<!--DIV PARA BOTON ENVIAR MENSAJE------------------------>
+              <div>
+              <input class="send" type="submit" value="SEND">
+              </div> 
+              <button type="reset" class="botonReset">Reset</button>
+              </fielset>
+             </ul>
+           </form>
+          </div>
+        </main>
+   <!--FOOTER-------------------------------------->
+   <footer>
+    <div class="flecha">
+        <a href="#"><i class="fa-solid fa-arrow-up-long"></i></a> 
+     </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <a class="navbar-brand p-4 " href="#">Categorias</a>
+        <div class="container-fluid m-4">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./sobre-mi.html">Sobre Mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./testimonios.html">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./portrait.html">Portrait</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <a class="navbar-brand p-4 " href="#">Lee Henne Photography </a>
+        </div>
+    </nav>
+      <div class="contentFooter"> 
+        <ul class="liFooterIndex">
+         <li class="liFooter">© Todos los derechos reservados /code by</li>
+         <li class="liFooter"><a href="https://www.linkedin.com/in/gabriela-vega-4b1b28185" target="_blank">Gabriela Vega  2022</a></li>
+         </ul>
+           <div class="redes">
+            <span>Seguime en las redes</span>
+           <div class="icon">
+           <a href="https://www.facebook.com/vegabyta" target="_blank">
+            <i class="fa-brands fa-facebook"></i></a>
+           <strong>Facebook</strong> 
+           </div>
+
+           <div class="icon">
+           <a href="https://www.instagram.com/vegabyta/?hl=es-la" target="_blank">
+            <i class="fa-brands fa-instagram"></i></a>
+           <strong>Instagram</strong>  
+           </div>
+
+           <div class="icon">
+           <a href="https://www.pinterest.com.mx/vegabyta/_saved/" target="_blank" >
+            <i class="fa-brands fa-pinterest-p"></i></a>
+           <strong>Pinterest</strong> 
+           </div>
+          </div>
+         </div>
+</footer>
+    <!--LINK DE BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
