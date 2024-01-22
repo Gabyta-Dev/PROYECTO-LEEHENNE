@@ -109,7 +109,8 @@ li a {
 /***LAYOUT DESDE MAIN CON GRID **********/
 .grid {
   display: grid;
-  grid-template-areas: "seccion-uno seccion-uno"
+  grid-template-areas:
+    "seccion-uno seccion-uno"
     "wrapper wrapper "
     "seccion-dos seccion-dos ";
   background-color: white;
@@ -152,7 +153,7 @@ li a {
 .futurosText {
   text-align: center;
   font-size: 1rem;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /*****ESTILO SECCION WRAPPER*****************/
@@ -206,7 +207,6 @@ li a {
 }
 
 @keyframes typ {
-
   40%,
   60% {
     left: calc(90% + 10%);
@@ -259,15 +259,14 @@ li a {
 footer {
   background-color: #ffffff;
   font-family: "Raleway", sans-serif;
-
 }
 /*****ESTILO DE FOOTER************************/
 
 .contentFooter {
   display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .liFooterIndex {
@@ -277,62 +276,61 @@ footer {
   flex-wrap: wrap;
   padding: 10px;
 }
-  .liFooterIndex .liFooter {
-    text-decoration: none;
-    list-style: none;
-    outline: 0; 
-  }
+.liFooterIndex .liFooter {
+  text-decoration: none;
+  list-style: none;
+  outline: 0;
+}
 
 .liFooter a {
   text-decoration: none;
-  font-size: 0.9375rem !important; 
+  font-size: 0.9375rem !important;
   color: black;
   padding: 10px;
-  
 }
 /**REDES SOCIALES**********/
 .redes {
   display: flex;
   padding: 10px;
- }
+}
 
 .icon {
   height: 5rem;
-  overflow: hidden !important; 
+  overflow: hidden !important;
 }
 
 .icon a {
   display: block;
   height: 5rem;
   line-height: 4.5rem;
-  transition: 0.4s all; 
+  transition: 0.4s all;
 }
 
 .icon:hover a {
-  height: 2.8125rem; 
+  height: 2.8125rem;
 }
-.fa-brands{
+.fa-brands {
   color: black;
 }
-strong{
-  font-family: 'Times New Roman', Times, serif;
+strong {
+  font-family: "Times New Roman", Times, serif;
 }
 /*FLECHA IR HACIA ARRIBA*/
 .flechaIr {
-  margin-left: 10px; 
+  margin-left: 10px;
 }
-
 
 /*MEDIA QUERY PARA SECCION UNO -DOS Y WRAPPER*/
 @media (max-width: 768px) {
-/* MEDIA QUERY PARA CAJAS CONTENEDORAS*/
-@media (max-width: 700px) {
-  .container {
-    flex-wrap: wrap;
+  /* MEDIA QUERY PARA CAJAS CONTENEDORAS*/
+  @media (max-width: 700px) {
+    .container {
+      flex-wrap: wrap;
+    }
   }
-}
   .Grid {
-    grid-template-areas: "seccion-uno"
+    grid-template-areas:
+      "seccion-uno"
       "seccion-dos"
       "wrapper";
   }
@@ -355,7 +353,6 @@ strong{
 
   .wrapper {
     flex-direction: column;
-
   }
 
   .dynamic {
@@ -371,19 +368,18 @@ strong{
   }
 
   .gridWedding {
-    grid-template-rows: repeat( object-fit 3 , 1fr);
-
+    grid-template-rows: repeat(object-fit 3, 1fr);
   }
 }
 /****HTML SOBRE MI ***************/
 /*******ESTILOS DE SECCION SOBRE MI*************/
-.containerSobreMi{
+.containerSobreMi {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.sect{
+.sect {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -394,30 +390,30 @@ strong{
   padding: 50px;
   margin: 50px;
 }
-.sect h2{
+.sect h2 {
   width: 50%;
   text-align: center;
 }
-.sect p{
+.sect p {
   width: 50%;
 }
 
 /**FOTO DE PERFIL ***************/
-.fotografia{
+.fotografia {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.foto{
+.foto {
   width: 30%;
   margin: 50px;
 }
-.parrafoText{
+.parrafoText {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
-.parrafoText p{
+.parrafoText p {
   word-spacing: 0.625rem;
   font-family: "Raleway", sans-serif;
   text-align: center;
@@ -434,14 +430,14 @@ strong{
   font-family: "Raleway", sans-serif;
   font-size: 1.125rem;
 }
-.sectionContact h4{
+.sectionContact h4 {
   text-align: center;
   margin-bottom: 30px;
 }
 
 /************BOTON DE FORMULARIO*******************/
 .button {
-  border: 1px solid  #000000  ;
+  border: 1px solid #000000;
   text-decoration: none;
   letter-spacing: 2px;
   font-family: "Raleway", sans-serif;
@@ -451,26 +447,25 @@ strong{
   padding: 10px;
   text-align: center;
   transition: 2s;
- }
- .button:hover{
-  background-color:#313131;
+}
+.button:hover {
+  background-color: #313131;
   color: #ffffff;
-  
- }
+}
 /***FLECHA IR HACIA ARRIBA**************/
-.flecha{
+.flecha {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
   align-items: center;
   padding: 20px;
 }
-.fa-solid{
+.fa-solid {
   font-size: 20px;
-  color: #000000
+  color: #000000;
 }
 @media (max-width: 768px) {
-  .sect{
+  .sect {
     flex-direction: column;
     padding: 10px;
     margin: 20px;
@@ -478,92 +473,120 @@ strong{
   .sect p {
     width: 100%;
   }
-  strong{
+  strong {
     text-align: center;
   }
- .button{
-  width: 50%;
- }
+  .button {
+    width: 50%;
   }
+}
 /***** FIN DE SOBRE MI*********************/
 /****HTML PORTRAIT***********/
- /******TITULOS**********************/
- .tituloWedding {
- display: grid;
+/******TITULOS**********************/
+.portrait {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
   align-items: center;
   color: black;
-  font-size: 1.125rem;
-  word-spacing: 0.625rem;
+
+  word-spacing: 0.655rem;
   font-family: "Raleway", sans-serif;
+  padding-top: 50px;
+  background-color: #edecee73;
 }
-  .tituloWedding .linea {
-    border-top: 1px solid black;
-    height: 1px; 
-  }
-  /*Contenedor de imagenes */
-.gridWedding {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 21.875rem;
-  padding: 3.125rem;
-  grid-gap: 0.5rem; }
 
-/**** CONTENEDOR DE IMAGENES**********************************/
-.galeryImg2 {
+.portrait li {
+  list-style: none;
+  padding-right: 60px;
+  font-size: 2rem;
+}
+.portrait img {
+  width: 70%;
+}
+
+/***GALERIA DE FOTOS************/
+.galeria {
   position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 10px;
+  padding: 40px 0;
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+}
+.galeria img {
   width: 100%;
-  height: 100%;
-  object-fit: cover; }
-
-/*****CONTENEDOR DE ITEMS FOTOS********************************/
-.galeryItems2 {
-  position: relative; }
-
-.galeryItems2:nth-child(4) {
-  grid-column-start: span 2;
-  grid-row-start: span 2; }
-
-.galeryItems2:nth-child(8) {
-  grid-row-start: span 2; }
-
-.galeryItems2:nth-child(12) {
-  grid-column-start: span 2;
-  grid-row-start: span 3; }
-
-.galeryItems2:nth-child(17) {
-  grid-row-start: span 2; }
-
-.galeryItems2:nth-child(19) {
-  grid-row-start: span 2; }
-
-.galeryItems2:nth-child(21) {
-  grid-column-start: span 2; }
-
-.galeryItems2:nth-child(23) {
-  grid-column-start: span 2;
-  grid-row-start: span 2; }
-
-.galeryItems2:nth-child(24) {
-  grid-row-start: span 2; }
-
-.galeryItems2:nth-child(25) {
-  grid-column-start: span 2; }
-
-.galeryItems2:nth-child(26) {
-  grid-row-start: span 2; }
-
-.galeryItems2:nth-child(28) {
-  grid-row-start: span 2; }
-
-.galeryItems2:nth-child(29) {
-  grid-row-start: span 2; }
-
-/*******FIN DE GALERIA WEDDING****************************/
-@media (max-width: 768px){
-.gridWedding {
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  vertical-align: top;
+  object-fit: cover;
+  transition: transform 3s;
 }
+.galeria img:hover {
+  transform: scale(1.1);
+  object-fit: cover;
 }
+.galeria a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgb(56, 54, 54);
+}
+/**BOX *********/
+.boxGaleri {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.651);
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0); /** ESCONDEMOS LA IMG**/
+  transition: transform 0.3s ease-in-out;
+}
+.boxGaleri img {
+  width: 75vw;
+  max-height: 70vh;
+}
+/**CUANDO HAGA CLICK SE ABRE LA IMG**********/
+.boxGaleri:target {
+  transform: scale(1.1);
+  filter: saturate(2.1);
+}
+/***CRIZ CLOSE ******/
+.fa-xmark {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+.close {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+/*** FLECHAS ***/
+.next {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+.fa-arrow-left {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+.fa-arrow-right {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
 /**SECCION EXPERIENCIAS ******************/
 .experiencieGrid {
   display: flex;
@@ -574,7 +597,8 @@ strong{
   font-family: "Cardo", serif;
   font-size: 1.0625rem;
   color: black;
-  margin-bottom: 3.75rem; }
+  margin-bottom: 3.75rem;
+}
 
 .subtitulo3 {
   display: flex;
@@ -586,22 +610,24 @@ strong{
   color: white;
   background-image: url(../imagenes/iconos-fondos-perfil/cherry.jpg);
   background-position: center;
-  background-size: cover; 
+  background-size: cover;
 }
 
 .opinion1 {
-  margin: 1.875rem 12.5rem; 
+  margin: 1.875rem 12.5rem;
   letter-spacing: 2px;
 }
 
-  /*media query*********/
-  @media (max-width: 768px){
+/*media query*********/
+@media (max-width: 768px) {
   .experiencieGrid {
-    padding: 0.5rem; }
+    padding: 0.5rem;
+  }
   .opinion1 {
-    margin: 1.25rem; }
-    }
-    /***SECCION CONTACTO *******************/
+    margin: 1.25rem;
+  }
+}
+/***SECCION CONTACTO *******************/
 .mainContacto {
   display: flex;
   flex-direction: column;
@@ -613,14 +639,13 @@ strong{
   background-size: cover;
   background-attachment: fixed;
   font-family: "Cardo", serif;
-  color:  rgb(255, 255, 255);
- }
-  .mainContacto .final {
-    font-size: medium;
-    margin-top: 6.75rem; 
-    color:  rgba(32, 32, 32, 0.7); 
-  
-  }
+  color: rgb(255, 255, 255);
+}
+.mainContacto .final {
+  font-size: medium;
+  margin-top: 6.75rem;
+  color: rgba(32, 32, 32, 0.7);
+}
 
 .formContact {
   display: flex;
@@ -633,12 +658,13 @@ strong{
   background-color: rgba(32, 32, 32, 0.4);
   padding: 1.875rem 1.25rem;
   border-radius: 0.625rem;
-  margin-bottom: 3.125rem; 
+  margin-bottom: 3.125rem;
 }
 
 label {
   font-size: 1.125rem;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+}
 
 input {
   color: #ebeaec;
@@ -647,46 +673,116 @@ input {
   outline: none;
   background: transparent;
   width: 100%;
-  padding: 0.3125rem; }
-  input input[type=number]::-webkit-inner-spin-button,
-  input input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0; }
+  padding: 0.3125rem;
+}
+input input[type="number"]::-webkit-inner-spin-button,
+input input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 .evento {
-  margin: 0.625rem 0; }
+  margin: 0.625rem 0;
+}
 
 textarea {
   width: 100%;
-  height: 12.5em; }
+  height: 12.5em;
+}
 
 .send {
   color: #ebeaec;
   padding: 1.25rem;
-  border: none; }
-  .send:hover {
-    cursor: pointer;
-    background: #ede6db;
-    color: #ebeaec; }
+  border: none;
+}
+.send:hover {
+  cursor: pointer;
+  background: #ede6db;
+  color: #ebeaec;
+}
 
 .botonReset {
   color: #ebeaec;
   background: none;
   border: none;
-  border-bottom: 1px solid #ebeaec; }
-.send:hover {
-  color:#000000 
+  border-bottom: 1px solid #ebeaec;
 }
-    /*media query*********/
-    @media (max-width: 768px){
-      .formContact {
-        margin: 0.625rem; }
-        .formContact .final {
-          padding: 5px;
-          text-align: center; }
-          .final{
-            padding: 10px;
-            text-align: center;
-          }
-        }
-  
+.send:hover {
+  color: #000000;
+}
+/*media query*********/
+@media (max-width: 768px) {
+  .formContact {
+    margin: 0.625rem;
+  }
+  .formContact .final {
+    padding: 5px;
+    text-align: center;
+  }
+  .final {
+    padding: 10px;
+    text-align: center;
+  }
+}
+/****HTML JENNA & PAUL ***********/
+.gridRedSocial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.fa-brands {
+  padding: 15px;
+  font-size: 1em;
+  transition: transform 1s;
+}
+.fa-brands:hover{
+  transform: scale(1.3);
+}
+
+/***IMAGEN PRINCIPAL*******/
+.gridUno {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.gridUno img {
+  width: 85%;
+}
+.gridJe {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 21.875rem;
+}
+
+/**** CONTENEDOR DE IMAGENES**********************************/
+.gridDos {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*****CONTENEDOR DE ITEMS FOTOS********************************/
+
+.gridDos:nth-child(1) {
+  grid-column-start: span 1;
+  grid-row-start: span 1;
+}
+
+.gridDos:nth-child(2) {
+  grid-row-start: span 1;
+}
+
+.gridDos:nth-child(3) {
+  grid-column-start: span 1;
+  grid-row-start: span 1;
+}
+
+
+
+.gridDos:nth-child(4) {
+  grid-row-start: span 2;
+  grid-column-end: span 2;
+}
