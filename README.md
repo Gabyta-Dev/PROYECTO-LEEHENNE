@@ -1,5 +1,6 @@
 # PROYECTO-LEEHENNE
-![leehenne](https://user-images.githubusercontent.com/95593201/233129855-ca1fc522-9936-4261-8fce-4b1873570174.png)
+
+![Gabyta-dev - Full - Generic Laptop - 2024-1-24 at 10 55 15](https://github.com/Gabyta-Dev/PROYECTO-LEEHENNE/assets/95593201/09211dd8-8222-4848-b8b4-4c61c21129c3)
 
 <em>Lee Henne</em>
 <h3 align="center">Página de fotografía de Bodas (Todos los datos son ficticios -Práctica)</h3>
@@ -26,12 +27,18 @@
 2. Un Botón "Contéctame" 
 
 
+
+
+
 <h3 align="left"> Una página Portfolio</h3>
 1. Una galeria con efecto Zoom por cada Seccion
 2. Frase adicional
 
+
 <h3 align="left"> Una página Experiencia testimonios ficticios de experiencia con el servicio</h3>
 1. Incluir imagen y testimonios de clientes 
+
+
 <h3 align="left">Una página Contacto con los siguientes campos en el formulario:</h3>
 1.  Nombre y Apellido
 2.  Email
@@ -41,12 +48,13 @@
 6.  Botón para enviar el formulario 
 7.  Botón Reset
 </p>
+
+
 <h3 align="left">Estructura Resposive</h3>
 
-![uno](https://user-images.githubusercontent.com/95593201/233146972-91131ef8-67c6-4af7-9d51-7454b8a90f39.jpeg)
-![responsivily](https://github.com/Gabyta-Dev/PROYECTO-LEEHENNE/assets/95593201/52288e7b-0095-4e54-868b-cbb6996913cb)
 
-<h3>3.	La web será visible a partir de la URL </h3>
+
+<h3>3.	La web será visible a partir de la URL  https://gabyta-dev.github.io/PROYECTO-LEEHENNE/ </h3>
 <h4 align="center">
 Gracias !! 
 </h4>
