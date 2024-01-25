@@ -8,7 +8,6 @@
  *Full Responsive - Uso de etiquetas de contenido semántico
  *Uso de librerías externa Bootstrap 
  *Prácticas de versionado de Git 
- *Procesador Sass
  *Incluir técnicas de animación con CSS sin el uso de librerías externas. 
 
 ## :hammer:Estructura / Funcionalidades del proyecto
@@ -25,22 +24,22 @@
 <h3 align="left">Una página Sobre Mí</h3>
 1. Información profesional 
 2. Un Botón "Contéctame" 
-3. Un carrusel de Imégenes
 
-<h3 align="left"> Una página Portfolio donde incliré 5 páginas con galerias de imágenes</h3>
+
+<h3 align="left"> Una página Portfolio</h3>
 1. Una galeria con efecto Zoom por cada Seccion
 2. Frase adicional
 
 <h3 align="left"> Una página Experiencia testimonios ficticios de experiencia con el servicio</h3>
 1. Incluir imagen y testimonios de clientes 
-2.	Una página Contacto con los siguientes campos en el formulario:
-3.  Nombre y Apellido
-4.  Email
-5.  Boton selector de Fecha 
-6.  Boton selector de evento a cubrir
-7.  Mensaje de Consulta 
-8.  Botón para enviar el formulario 
-9.  Botón Reset
+<h3 align="left">Una página Contacto con los siguientes campos en el formulario:</h3>
+1.  Nombre y Apellido
+2.  Email
+3.  Boton selector de Fecha 
+4.  Boton selector de evento a cubrir
+5.  Mensaje de Consulta 
+6.  Botón para enviar el formulario 
+7.  Botón Reset
 </p>
 <h3 align="left">Estructura Resposive</h3>
 
@@ -49,7 +48,7 @@
 
 <h3>3.	La web será visible a partir de la URL </h3>
 <h4 align="center">
-:construction: Proyecto en construcción :construction:
+Gracias !! 
 </h4>
 
 <h3 align="left">Connect with me:</h3>
